@@ -442,7 +442,7 @@ function onChangecounterpartyCode() {
   if (EdocsApi.getAttributeValue("ContractorIsResident").value == "false") isNumbercounterpartyCode();
 
   const counterpartyCode = EdocsApi.getAttributeValue("counterpartyCode");
-  if (counterpartyCode.value.length > 12) throw "Не може містити більше 12 символів. Будь ласка, перевірте введені дані";
+  if (counterpartyCode.value?.length > 12) throw "Не може містити більше 12 символів. Будь ласка, перевірте введені дані";
 }
 
 function isNumbercounterpartyCode() {
