@@ -919,6 +919,7 @@ function onTaskExecuForReview(routeStage) {
       var additionalInfo = EdocsApi.getAttributeValue("additionalInfo");
       if (!additionalInfo.value) throw "Заповніть поле «Додаткова інформація»";
     }
+    setPropertyDisabled("additionalInfo", true);
   }
 }
 
